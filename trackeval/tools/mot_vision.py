@@ -29,7 +29,7 @@ MOT17:
 '''
 
 
-from utils import read_txt,chinese2img,show_img,build_dir
+from trackeval.tools.utils import read_txt,chinese2img,show_img,build_dir
 import os
 import numpy as np
 import cv2

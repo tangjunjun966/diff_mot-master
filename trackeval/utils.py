@@ -144,3 +144,25 @@ def load_detail(file):
 class TrackEvalException(Exception):
     """Custom exception for catching expected errors."""
     ...
+
+
+
+
+def write_txt(text_lst,out_dir):
+    '''
+    每行内容为列表，将其写入text中
+    '''
+    file_write_obj = open(out_dir, 'w')  # 以写的方式打开文件，如果文件不存在，就会自动创建
+    for text in text_lst:
+        file_write_obj.writelines(text)
+        file_write_obj.write('\n')
+    file_write_obj.close()
+
+    return out_dir
+
+
+
+
+
+
+

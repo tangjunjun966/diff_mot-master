@@ -97,6 +97,7 @@ def main(args):
         with tqdm(total=len(train_loader)) as pbar:
             for iter,data in enumerate(train_loader):
 
+
                 # pre_imgs, cur_images, pre_targets, cur_targets = data
                 pre_imgs = data["pre_images"].to(device)            #data['pre_imgs'].to(device)  #torch.stack(data['pre_imgs'], 0).to(device)   #
                 cur_images = data["cur_images"].to(device)          #data['cur_images'].to(device)

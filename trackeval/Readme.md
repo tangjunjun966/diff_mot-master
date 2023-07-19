@@ -27,6 +27,7 @@ frame, id, bb_left, bb_top, bb_width, bb_height, active, label_id, visibility ra
 ###预测数据结构
 
 frame_id, id, bbox_left, bbox_top, bbox_w, bbox_h, -1, -1, -1, i
+
 第0个的frame_id表示第几帧，没有0帧，只有第1帧开始，与gt.txt的帧对应;
 第1个id表示跟踪id,由跟踪算法决定，实际为常说的track_id;
 第2个到第5个数代表物体框的左上角坐标及长宽;
